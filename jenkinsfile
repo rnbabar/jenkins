@@ -1,0 +1,11 @@
+pipeline
+{
+    stage ('first')
+    {
+        steps
+        {
+            sh 'echo First Jenkins'
+        }
+    }
+
+}
