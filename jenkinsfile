@@ -1,8 +1,8 @@
 pipeline
 {
-    stage ('first')
+    stages
     {
-        steps
+        steps ('first')
         {
             sh 'echo First Jenkins'
         }
