@@ -1,7 +1,7 @@
 pipeline{
     agant none
     stages {
-        satge('Install Java'){
+        stage('Install Java'){
             agent{
                 node{
                     label 'JAVA'
