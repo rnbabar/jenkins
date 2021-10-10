@@ -1,16 +1,14 @@
 pipeline{
-    agent none
-    stages{
-        stage ('java Installation'){
+    agant none
+    stages {
+        satge('Install Java'){
             agent{
-                node {
+                node{
                     label 'JAVA'
                 }
                 steps{
-                    sh 'echo installing Java'
-
+                    sh 'echo starting java installation'
                 }
-
             }
         }
     }
