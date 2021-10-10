@@ -1,0 +1,17 @@
+pipeline{
+    agent none
+    stages{
+        stage ("java Installation"){
+            agent{
+                node {
+                    label "JAVA"
+                }
+                steps{
+                    sh 'eco installing Java'
+
+                }
+
+            }
+        }
+    }
+}
