@@ -1,17 +1,22 @@
-pipeline{
+pipeline
+{
     agent any
-    stages{
+    stages
+    {
 
         stage ('first')
         {
-            steps{
+            steps
+            {
                 sh 'echo First Jenkins'
             }
+        }
         stage ('second')
-                {
-                    steps{
-                        sh 'echo second line'
-                    }
+        {
+               steps
+               {
+                  sh 'echo second line'
+               }
 
         }
     }
